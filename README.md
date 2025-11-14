@@ -45,6 +45,31 @@ The built files will be in the `dist` directory. You can preview the production 
 npm run preview
 ```
 
+## GitHub Pages Deployment
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys the site when you push to the `master` or `main` branch.
+
+**To enable GitHub Pages:**
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+4. The workflow will automatically deploy on the next push to `master` or `main`
+
+**Live Site:** https://oleksandrobydalo.github.io/type-trainer/
+
+### Manual Deployment
+
+If you prefer to deploy manually:
+
+1. Build the project: `npm run build`
+2. The `dist` folder contains the production-ready files
+3. Configure GitHub Pages to serve from the `dist` folder or use the GitHub Actions workflow
+
 ## How to Use
 
 1. **Start Typing**: Click on the input field or start typing to begin a lesson
